@@ -20,9 +20,9 @@ This project delivers an end-to-end analysis of **54,860 healthcare insurance cl
 
 Healthcare insurers and hospital administrators face three critical challenges:
 
-1. **Cost Visibility** — Which medical conditions and providers are driving the highest costs, and are costs growing over time?
-2. **Billing Integrity** — Are there anomalous or erroneous claims in the portfolio that need investigation before payment?
-3. **Operational Planning** — How are patient admission volumes trending month-on-month, and are there seasonal patterns that require resource planning?
+1. **Cost Visibility** - Which medical conditions and providers are driving the highest costs, and are costs growing over time?
+2. **Billing Integrity** - Are there anomalous or erroneous claims in the portfolio that need investigation before payment?
+3. **Operational Planning** - How are patient admission volumes trending month-on-month, and are there seasonal patterns that require resource planning?
 
 This analysis addresses all three challenges using real claims data, advanced SQL, and Python-based exploratory data analysis.
 
@@ -119,7 +119,7 @@ Full exploratory data analysis in Jupyter Notebook covering data loading, cleani
 ## 💡 Key Findings
 
 ### Finding 1: Diabetes is the Highest-Cost Condition
-Diabetes accounts for **$236,494,659 in total billing** — the largest share of the $1.4B portfolio at 16.83%. With 9,304 cases and an average billing of $25,638 per patient, it represents both the highest volume and highest cost condition. This makes Diabetes the primary target for any cost containment strategy.
+Diabetes accounts for **$236,494,659 in total billing** - the largest share of the $1.4B portfolio at 16.83%. With 9,304 cases and an average billing of $25,638 per patient, it represents both the highest volume and highest cost condition. This makes Diabetes the primary target for any cost containment strategy.
 
 ### Finding 2: All 5 Insurers Have Near-Identical Cost Profiles
 Every insurer holds approximately **20% of total billing**, with average claims ranging narrowly from $25,389 (UnitedHealthcare) to $25,616 (Medicare). The billing standard deviation of ~$14,000 across all providers indicates the portfolio is well-diversified with no single insurer carrying disproportionate risk.
@@ -128,7 +128,7 @@ Every insurer holds approximately **20% of total billing**, with average claims 
 Negative billing amounts totalling approximately **$108,000** were identified across all 5 insurers. Aetna carries the worst single negative claim at **-$2,008.49**. These records are statistically anomalous and likely represent data entry errors, duplicate payment reversals, or unapplied credits. They require billing team review before period-end reporting.
 
 ### Finding 4: Elective Admissions Cost More Than Emergencies
-Counterintuitively, **Elective admissions average $25,663** — higher than Emergency admissions at $25,551. In real healthcare data this would be unexpected. This finding warrants further investigation into whether elective procedures in this portfolio involve high-cost planned surgeries that are driving up the average.
+Counterintuitively, **Elective admissions average $25,663** - higher than Emergency admissions at $25,551. In real healthcare data this would be unexpected. This finding warrants further investigation into whether elective procedures in this portfolio involve high-cost planned surgeries that are driving up the average.
 
 ### Finding 5: February 2022 Shows a Significant Unexplained Dip
 Admissions dropped to **779 in February 2022**, an **18% decline** from the prior month, with billing falling to $19M — the lowest single month in the entire 5-year period. Both metrics recovered the following month. This pattern is consistent with an external disruption such as a healthcare policy change, data reporting gap, or operational issue. It requires further investigation.
@@ -162,13 +162,13 @@ The mixed capitalisation issue found in patient names (e.g. "tOdd CARrILIO", "kA
 
 ## ⚠️ Limitations
 
-1. **Synthetic Dataset** — The dataset appears to be synthetically generated. The perfectly uniform billing distribution, identical insurer cost profiles, and uniform length of stay across all conditions are statistically unlikely in real clinical data. Findings should be interpreted as demonstrating analytical methodology rather than real-world conclusions.
+1. **Synthetic Dataset** - The dataset appears to be synthetically generated. The perfectly uniform billing distribution, identical insurer cost profiles, and uniform length of stay across all conditions are statistically unlikely in real clinical data. Findings should be interpreted as demonstrating analytical methodology rather than real-world conclusions.
 
-2. **No Diagnosis Codes** — The dataset lacks ICD-10 diagnosis codes which are standard in real claims data. This limits the depth of clinical analysis possible.
+2. **No Diagnosis Codes** - The dataset lacks ICD-10 diagnosis codes which are standard in real claims data. This limits the depth of clinical analysis possible.
 
-3. **No Provider Cost Data** — Hospital and doctor names are present but cost rates per provider are not available, preventing provider-level cost efficiency analysis.
+3. **No Provider Cost Data** - Hospital and doctor names are present but cost rates per provider are not available, preventing provider-level cost efficiency analysis.
 
-4. **No Claims Outcome Data** — Whether claims were approved, rejected, or partially paid is not captured, limiting the ability to analyse claims processing efficiency.
+4. **No Claims Outcome Data** - Whether claims were approved, rejected, or partially paid is not captured, limiting the ability to analyse claims processing efficiency.
 
 ---
 
@@ -224,5 +224,5 @@ jupyter notebook python/healthcare_eda.ipynb
 **Dennis Njiru Aningu**
 Senior Data Analyst | SQL, Python, Tableau, Excel
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/dennisaningu)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/dennisnjiru/)
 [![GitHub](https://img.shields.io/badge/GitHub-NjiruDennis-black?logo=github)](https://github.com/NjiruDennis)
