@@ -8,6 +8,12 @@
 
 ---
 
+## 📊 Live Dashboard
+
+👉 [View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/dennis.aningu/viz/HealthcareInsuranceClaimsAnalytics/Dashboard)
+![Dashboard Screenshot](tableau/dashboard_screenshot.png)
+---
+
 ## 📌 Executive Summary
 
 This project delivers an end-to-end analysis of **54,860 healthcare insurance claims** worth a combined **$1.4 billion**, spanning **May 2019 to May 2024** across 5 insurance providers and 6 medical conditions. The analysis identifies cost drivers, flags billing anomalies, benchmarks insurer performance, and tracks admission trends over 5 years. Key findings reveal that Diabetes is the highest-cost condition at $236M, Cigna leads claim volumes, and 108 negative billing records require immediate review. Recommendations are provided to guide cost containment, anomaly resolution, and operational planning.
@@ -174,7 +180,7 @@ The mixed capitalisation issue found in patient names (e.g. "tOdd CARrILIO", "kA
 
 ## 🚀 Next Steps
 
-- [ ] Build a Tableau dashboard for executive-level reporting
+- [x] Build a Tableau dashboard for executive-level reporting
 - [ ] Add a predictive model to forecast monthly admission volumes
 - [ ] Extend anomaly detection to flag duplicate claims across providers
 - [ ] Connect Python directly to PostgreSQL via SQLAlchemy for live querying
@@ -197,7 +203,7 @@ healthcare-claims-analytics/
 │   ├── admission_trends.png         # Monthly trend charts
 │   └── los_admission_analysis.png   # Length of stay charts
 ├── tableau/
-│   └── healthcare_dashboard.twbx    # Tableau dashboard (coming soon)
+│   └── healthcare_dashboard.twbx    # Tableau dashboard
 └── README.md
 ```
 
@@ -217,6 +223,9 @@ pip install pandas matplotlib seaborn psycopg2-binary sqlalchemy jupyter
 jupyter notebook python/healthcare_eda.ipynb
 ```
 
+### Tableau
+👉 [View the live interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/dennis.aningu/viz/HealthcareInsuranceClaimsAnalytics/Dashboard)
+
 ---
 
 ## 👤 Author
@@ -226,3 +235,4 @@ Senior Data Analyst | SQL, Python, Tableau, Excel
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/dennisnjiru/)
 [![GitHub](https://img.shields.io/badge/GitHub-NjiruDennis-black?logo=github)](https://github.com/NjiruDennis)
+[![Tableau](https://img.shields.io/badge/Tableau-Dashboard-lightblue?logo=tableau)](https://public.tableau.com/app/profile/dennis.aningu/viz/HealthcareInsuranceClaimsAnalytics/Dashboard)
